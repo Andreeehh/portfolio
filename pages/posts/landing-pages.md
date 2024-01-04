@@ -21,6 +21,6 @@ Dive into my multi-section landing page, a hub of varied information presented i
 
 **Note:** All sites are powered by Strapi on the backend, utilizing GraphQL for data retrieval. Strapi manages content such as blog posts, real estate listings, and landing page sections, along with site configuration settings like logos and names.
 
-## [Explore the Landing Page](https://vercel.com/andreeehh/project-6-nextjs/B7FXXiFkGGkRZUyXsPqHPcLT7pxT)
+## [Explore the Landing Page](https://project-6-nextjs.vercel.app/)
 
 ---
