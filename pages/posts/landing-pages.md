@@ -19,7 +19,7 @@ Dive into my multi-section landing page, a hub of varied information presented i
 - **Clean Design:** Experience a visually appealing and organized layout.
 - **Toggle Theme:** Personalize your browsing experience with a toggle option for dark and light modes.
 
-**Note:** All sites are powered by Strapi on the backend, utilizing GraphQL for data retrieval. Strapi manages content such as blog posts, real estate listings, and landing page sections, along with site configuration settings like logos and names.
+**Note:** All sites are powered by Strapi on the backend, utilizing GraphQL for data retrieval. Strapi manages content such as blog projects, real estate listings, and landing page sections, along with site configuration settings like logos and names.
 
 ## [Explore the Landing Page](https://project-6-nextjs.vercel.app/)
 

@@ -20,6 +20,6 @@ Explore my real estate landing page, a platform designed to display property lis
 - **Address Information:** Access comprehensive location details, including zip code and city.
 - **Filter Options:** Utilize the sidebar toggle for filtering listings based on the number of bedrooms, bathrooms, and parking spaces.
 
-**Note:** All sites are powered by Strapi on the backend, utilizing GraphQL for data retrieval. Strapi manages content such as blog posts, real estate listings, and landing page sections, along with site configuration settings like logos and names.
+**Note:** All sites are powered by Strapi on the backend, utilizing GraphQL for data retrieval. Strapi manages content such as blog projects, real estate listings, and landing page sections, along with site configuration settings like logos and names.
 
 ## [Explore the Landing Page](https://landing-page-with-filter.vercel.app/)
