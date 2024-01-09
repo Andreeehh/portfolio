@@ -10,20 +10,20 @@ async function generate() {
     feed_url: 'https://portfolio-six-psi-36.vercel.app/feed.xml'
   })
 
-  const projects = await fs.readdir(path.join(__dirname, '..', 'pages', 'projects'))
-  const allProjects = []
+  const posts = await fs.readdir(path.join(__dirname, '..', 'pages', 'posts'))
+  const allPosts = []
   await Promise.all(
-    projects.map(async (name) => {
+    posts.map(async (name) => {
       if (name.startsWith('index.')) return
 
       const content = await fs.readFile(
-        path.join(__dirname, '..', 'pages', 'projects', name)
+        path.join(__dirname, '..', 'pages', 'posts', name)
       )
       const frontmatter = matter(content)
 
-      allProjects.push({
+      allPosts.push({
         title: frontmatter.data.title,
-        url: '/projects/' + name.replace(/\.mdx?/, ''),
+        url: '/posts/' + name.replace(/\.mdx?/, ''),
         date: frontmatter.data.date,
         description: frontmatter.data.description,
         categories: frontmatter.data.tag.split(', '),
@@ -32,8 +32,8 @@ async function generate() {
     })
   )
 
-  allProjects.sort((a, b) => new Date(b.date) - new Date(a.date))
-  allProjects.forEach((post) => {
+  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+  allPosts.forEach((post) => {
       feed.item(post)
   })
   await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
